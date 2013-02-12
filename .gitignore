@@ -1,0 +1,11 @@
+*.pdb
+*.exe
+*.dll
+wow-*
+*.log
+dbc
+mmaps
+maps
+vmaps
+Crashes
+*.dist.in
