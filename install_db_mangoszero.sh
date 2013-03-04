@@ -1,0 +1,115 @@
+#!/bin/bash
+
+cd playerbot
+
+function run_world_sql
+{
+	echo "Running $1..."
+	mysql -uroot -p1 mangoszero_world < $1
+}
+
+function run_characters_sql
+{
+	echo "Running $1..."
+	mysql -uroot -p1 mangoszero_characters < $1
+	mysql -uroot -p1 mangoszero_characters_19 < $1
+	mysql -uroot -p1 mangoszero_characters_60 < $1
+	mysql -uroot -p1 mangoszero_characters_70 < $1
+}
+
+function run_realm_sql
+{
+	echo "Running $1..."
+	mysql -uroot -p1 mangoszero_realm < $1
+}
+
+function run_sd2_sql
+{
+	echo "Running $1..."
+	mysql -uroot -p1 mangoszero_scripts < $1
+}
+
+cd sql
+run_characters_sql characters_armory.sql
+run_characters_sql characters_armory_2.sql
+run_characters_sql characters_auctionhousebot.sql
+run_characters_sql characters_ai_playerbot.sql
+run_characters_sql characters_ai_playerbot_names.sql
+
+cd updates/0.12.2
+run_world_sql z1852_s1413_11827_01_mangos_creature_linking_template.sql
+run_world_sql z1854_s1415_11754_01_mangos_mangos_string.sql
+run_world_sql z1873_s1441_11852_01_mangos_gossip_menu.sql
+run_world_sql z1884_s1456_11876_01_mangos_creature_linking_template.sql
+run_world_sql z1922_s1504_11926_01_mangos_creature_template.sql
+run_world_sql z1940_s1528_11940_01_mangos_creature_movement_scripts.sql
+run_world_sql z1940_s1528_11940_02_mangos_event_scripts.sql
+run_world_sql z1940_s1528_11940_03_mangos_gameobject_scripts.sql
+run_world_sql z1940_s1528_11940_04_mangos_gossip_scripts.sql
+run_world_sql z1940_s1528_11940_05_mangos_quest_end_scripts.sql
+run_world_sql z1940_s1528_11940_06_mangos_quest_start_scripts.sql
+run_world_sql z1940_s1528_11940_07_mangos_spell_scripts.sql
+run_world_sql z1945_s1533_11947_01_mangos_dbscripts.sql
+run_world_sql z1951_s1540_11955_01_mangos_mangos_string.sql
+run_world_sql z1951_s1540_11955_02_mangos_command.sql
+run_world_sql z1961_s1549_11964_01_mangos_conditions.sql
+run_world_sql z1964_s1552_11968_01_mangos_creature_linking_template.sql
+run_world_sql z1982_s1574_11985_01_mangos_gameobject_template_scripts.sql
+run_world_sql z1994_s1582_11994_01_mangos_creature_linking.sql
+run_world_sql z2047_s1660_12087_01_mangos_mangos_string.sql
+run_world_sql z2047_s1660_12087_02_mangos_command.sql
+run_world_sql z2051_s1665_12094_01_mangos_creature_template.sql
+run_world_sql z2054_s1667_12097_01_mangos_mangos_string.sql
+run_world_sql z2067_sxxxx_xxxxx_01_mangos_mangos_string.sql
+run_world_sql z2069_sxxxx_xxxxx_01_mangos_skill_discovery.sql
+run_world_sql z2102_s1723_12148_01_mangos_areatrigger_teleport.sql
+run_world_sql z2124_s1750_12189_01_mangos_creature_template_spells.sql
+run_world_sql z2153_s1783_12233_01_mangos_mangos_string.sql
+run_world_sql z2155_s1785_12235_01_mangos_mangos_string.sql
+run_world_sql z2176_s1809_12258_01_mangos_mangos_string.sql
+run_world_sql z2186_s1819_12268_01_mangos_dbscripts.sql
+run_world_sql z2187_s1820_12269_01_mangos_creature_loot_template.sql
+run_world_sql z2187_s1820_12269_02_mangos_gameobject_loot_template.sql
+run_world_sql z2187_s1820_12269_03_mangos_fishing_loot_template.sql
+run_world_sql z2187_s1820_12269_04_mangos_reference_loot_template.sql
+run_world_sql z2187_s1820_12269_05_mangos_skinning_loot_template.sql
+run_world_sql z2187_s1820_12269_06_mangos_item_loot_template.sql
+run_world_sql z2187_s1820_12269_07_mangos_disenchant_loot_template.sql
+run_world_sql z2187_s1820_12269_08_mangos_mail_loot_template.sql
+run_world_sql z2187_s1820_12269_09_mangos_pickpocketing_loot_template.sql
+run_world_sql z2187_s1820_12269_10_mangos_gossip_menu.sql
+run_world_sql z2187_s1820_12269_11_mangos_gossip_menu_option.sql
+
+run_characters_sql z1787_s1342_11704_01_characters_auction.sql
+run_characters_sql z1794_s1350_11716_01_characters_auction.sql
+run_characters_sql z1794_s1350_11716_02_characters_characters.sql
+run_characters_sql z1794_s1350_11716_03_characters_creature_respawn.sql
+run_characters_sql z1794_s1350_11716_04_characters_gameobject_respawn.sql
+run_characters_sql z1794_s1350_11716_05_characters_guild.sql
+run_characters_sql z1794_s1350_11716_06_characters_guild_eventlog.sql
+run_characters_sql z1794_s1350_11716_07_characters_instance.sql
+run_characters_sql z1794_s1350_11716_08_characters_instance_reset.sql
+run_characters_sql z1794_s1350_11716_09_characters_mail.sql
+
+
+cd ..
+run_world_sql z2192_s1825_12278_01_mangos_creature_template.sql
+run_world_sql z2193_s1826_12279_01_mangos_creature_template.sql
+run_world_sql z2241_s1878_12344_01_mangos_command.sql
+run_world_sql z2256_s1886_12349_01_mangos_dbscripts_on_creature_death.sql
+run_world_sql z2264_s1894_12364_01_mangos_spell_script_target.sql
+run_world_sql z2268_s1900_12370_01_mangos_npc_vendor.sql
+run_world_sql z2268_s1900_12370_02_mangos_npc_vendor_template.sql
+
+
+cd ..
+
+cd ../src/bindings/scriptdev0/sql
+run_world_sql mangos_scriptname_clear.sql
+run_world_sql mangos_scriptname_full.sql
+
+run_sd2_sql scriptdev2_create_structure_mysql.sql
+run_sd2_sql scriptdev2_script_full.sql
+
+echo "Done. Press ENTER"
+read

@@ -11,3 +11,4 @@ Crashes
 *.dist.in
 playerbot
 dump
+playerbot-utils
