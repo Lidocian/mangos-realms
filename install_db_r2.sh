@@ -30,14 +30,7 @@ function run_sd2_sql
 }
 
 cd sql/updates
-run_world_sql 12278_01_mangos_creature_template.sql
-run_world_sql 12279_01_mangos_creature_template.sql
-run_world_sql 12344_01_mangos_command.sql
-run_world_sql 12349_01_mangos_dbscripts_on_creature_death.sql
-run_world_sql 12357_01_mangos_spell_script_target.sql
-run_world_sql 12363_01_mangos_npc_vendor.sql
-run_world_sql 12363_02_mangos_npc_vendor_template.sql
-run_world_sql 12401_01_mangos_spell_template.sql
+# run_world_sql 12401_01_mangos_spell_template.sql
 
 cd ../../sql_mr
 
