@@ -13,6 +13,7 @@ function run_characters_sql
 	echo "Running $1..."
 	mysql -uroot -p1 r2_characters < $1
 	mysql -uroot -p1 r2_characters_19 < $1
+	mysql -uroot -p1 r2_characters_29 < $1
 	mysql -uroot -p1 r2_characters_60 < $1
 	mysql -uroot -p1 r2_characters_70 < $1
 }
