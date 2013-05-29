@@ -31,10 +31,7 @@ function run_sd2_sql
 }
 
 cd sql/updates
-run_world_sql 12434_01_mangos_spell_template.sql
-run_world_sql 12440_01_mangos_spell_area.sql
-run_world_sql 12441_01_mangos_npc_spellclick_spells.sql
-run_world_sql 12465_01_mangos_spell_template.sql
+run_characters_sql 12487_01_characters_characters.sql
 
 cd ../../sql_mr
 
