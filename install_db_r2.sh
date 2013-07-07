@@ -31,7 +31,7 @@ function run_sd2_sql
 }
 
 cd sql/updates
-run_characters_sql 12487_01_characters_characters.sql
+#run_characters_sql 12487_01_characters_characters.sql
 
 cd ../../sql_mr
 
