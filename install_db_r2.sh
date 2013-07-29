@@ -14,6 +14,8 @@ function run_characters_sql
 	mysql -uroot -p1 r2_characters < $1
 	mysql -uroot -p1 r2_characters_19 < $1
 	mysql -uroot -p1 r2_characters_29 < $1
+	mysql -uroot -p1 r2_characters_39 < $1
+	mysql -uroot -p1 r2_characters_49 < $1
 	mysql -uroot -p1 r2_characters_60 < $1
 	mysql -uroot -p1 r2_characters_70 < $1
 }
