@@ -63,8 +63,8 @@ cd ../sql
 run_characters_sql characters_armory.sql
 run_characters_sql characters_armory_2.sql
 run_characters_sql characters_auctionhousebot.sql
-run_characters_sql characters_ai_playerbot.sql
-run_characters_sql characters_ai_playerbot_names.sql
+#run_characters_sql characters_ai_playerbot.sql
+#run_characters_sql characters_ai_playerbot_names.sql
 run_world_sql mangos_indexes.sql
 
 
