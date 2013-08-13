@@ -3,9 +3,11 @@
 
 for db in $dbs
 do
-	echo "Dumping $db..."
-	mysqldump -u$user -p$password $db > dump/$db.sql
+	echo "Starting $db dump..."
+	mysqldump -u$user -p$password $db > dump/$db.sql &
 done
+
+wait
 
 cd dump
 7z a dump.zip -y *.sql
