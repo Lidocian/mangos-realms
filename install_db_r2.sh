@@ -34,8 +34,7 @@ function run_sd2_sql
 
 cd sql/updates
 #run_characters_sql 12487_01_characters_characters.sql
-run_world_sql 12522_01_mangos_db_script_string.sql
-run_world_sql 12534_01_mangos_playercreateinfo_spell.sql
+run_world_sql 12540_01_mangos_command.sql
 
 cd ../../sql_mr
 
