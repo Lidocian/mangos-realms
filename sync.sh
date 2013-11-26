@@ -2,8 +2,8 @@
 JAVA_CMD="java -cp target/playerbot-transfer-utils-0.0.1-SNAPSHOT-with-dependencies.jar org.playerbot.ai.Main"
 JAVA_OPTS=""
 CMDLINE_PARAMS="-mode update -config src/main/resources/config.xml"
-CHARACTERS="-name Cali -name Eleya -name Siri -name Alaine -name Aelas"
-#CHARACTERS="-name Aelas"
+#CHARACTERS="-name Cali -name Eleya -name Siri -name Alaine -name Aelas"
+CHARACTERS="-name Aelas"
 CMDLINE="$JAVA_CMD $JAVA_OPTS $CMDLINE_PARAMS"
 
 cd playerbot-utils/transfer

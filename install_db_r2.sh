@@ -33,8 +33,8 @@ function run_sd2_sql
 }
 
 cd sql/updates
-#run_world_sql 12540_01_mangos_command.sql
-run_characters_sql 12562_01_characters_various_tables.sql
+run_world_sql 12540_01_mangos_command.sql
+#run_characters_sql 12562_01_characters_various_tables.sql
 
 cd ../../sql_mr
 
