@@ -1,1 +1,1 @@
-xcopy /F /Y worldserver.* Eversong
+xcopy /F /Y Testing\worldserver.exe Eversong
