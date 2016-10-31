@@ -80,7 +80,7 @@ and/or submit it to the SweetFX Settings Database : http://sfx.thelazy.net/games
    /*-----------------------------------------------------------.
   /                  HDR settings                               /
   '-----------------------------------------------------------*/
-#define HDRPower               1.3          // [0.00 to 8.00] Strangely lowering this makes the image brighter
+#define HDRPower               1.25          // [0.00 to 8.00] Strangely lowering this makes the image brighter
 #define radius2                0.88         // [0.00 to 8.00] Raising this seems to make the effect stronger and also brighter
 
 

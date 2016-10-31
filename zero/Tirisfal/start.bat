@@ -1,4 +1,4 @@
-SET NAME=Tanaris
+SET NAME=Tirisfal
 TITLE %NAME%
 cd ..
 start realmd
